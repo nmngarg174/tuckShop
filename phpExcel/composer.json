@@ -1,0 +1,8 @@
+{
+	
+	"require":{
+
+		"phpoffice/phpexcel": "dev-master"
+
+		}
+}

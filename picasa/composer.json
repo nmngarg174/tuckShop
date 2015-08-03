@@ -1,0 +1,5 @@
+{
+    "require": {
+	"zend/gdata": "1.12.1"
+    }
+}

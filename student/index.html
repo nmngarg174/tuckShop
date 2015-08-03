@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<style> 
+div#overlay 
+{
+	 display: none; 
+z-index: 1000; 
+background: #000; 
+position: fixed;
+ width: 100%; 
+ height: 100%; 
+ top: 0px; 
+ left: 0px;
+  text-align: center;
+   } 
+   div#specialBox { 
+   display: none;
+    position: relative; 
+	z-index: 10001; 
+	margin: 150px auto 0px auto; 
+	width: 500px; height: 300px; 
+	background: #FFF; color: #000; 
+	border-radius:7px;
+	padding:8px; 
+	} 
+
+</style> 
+
+
+<body>
+
+	<div id='overlay'></div>
+	 <div id='specialBox' style="position:relative; height:400px;">
+  
+  					
+ 		<!-- inserting the form contents here  -->
+        <div class="card-panel grey ">
+          <span class="white-text">Sign In to access the Notes.
+          </span>
+           <span style="position:relative; left:120px;"><button id='button' class='button btn blue-grey lighten-3'>Close</button> </span>
+
+        </div>
+        <div class='col s9'>
+    <div class="row">
+    <form class="col s12" id='myForm' action='verify.php' method='post'>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" name='email'>
+          <label for="email">Email</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate" name='pass'>
+          <label for="password">Password</label>
+        </div>
+      </div>
+      <div id='ack'>
+      </div>
+      <button class="waves-effect waves-light btn blue-grey lighten-3 " type="submit" id='submit' name='submit'> Sign In</button>
+      
+      
+    </form>
+  </div>
+    </div>
+    </div>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Hostel J</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Tuck Shop</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Hostel J Tuck Shop</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">New way to order food and refreshments.</h5>
+        </div>
+        <div class="row center">
+          <a id='button'  class="waves-effect waves-light btn modal-trigger button">Make An Order</a>
+          
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="thapar.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="mdi-image-flash-on"></i></h2>
+            <h5 class="center">Saves time</h5>
+
+            <p class="light">Save your valuable and effort and make an order from your room . </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="mdi-social-group"></i></h2>
+            <h5 class="center">Dedicated Staff</h5>
+
+            <p class="light">Your order will be dlivered by the J-Hostel staff at your doorstep. Only a small extra would be charged.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="mdi-action-settings"></i></h2>
+            <h5 class="center">User Friendly UI and Interface</h5>
+
+            <p class="light">We provide with really flexible UI , along with android app from where you can place your Order</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="hostelV.png" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Us</h4>
+          <p class="left-align light"><div>Naman Garg</div>
+          <div> Email: nmngarg174@gmail.com PhoneNo. :8437928163 </div></p>
+          
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="hostelj.png" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Developers</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          
+          
+        </div>
+        <div class="col l3 s12">
+          
+         
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script> 
+   
+   $(document).ready(function() {
+    	//alert('run hereee'); 
+		$('.button').click(function(){
+				//alert('run here'); 
+				// here we have here
+				$('#overlay').css("opacity",0.8);
+				 
+				 var val=$('#overlay').css("display"); 
+				if(val=="block"){
+					$('#overlay').fadeOut("slow").css("display","none");  
+					$('#specialBox').fadeOut("slow").css("display","none");  
+				}else{
+					$('#overlay').fadeIn("slow").css("display","block");  
+					$('#specialBox').fadeIn("slow").css("display","block");
+				}
+				
+		}); 
+});
+
+// after displaying the message scroll upwards to insert the div here
+
+
+    </script>  
+    
+    <script> 
+			
+			// creating the script for the login system here , how ? 
+			
+			$(document).ready(function(){
+			
+			$("button#submit").click( function() {
+ 						
+					// alert('run'); 
+ 					 if( $("#username").val() == "" || $("#password").val() == "" ){
+    					$("div#ack").html("Please enter both username and password");
+						alert('run');
+					 }else{
+  					  $.post( $("#myForm").attr("action"),
+	        $("#myForm :input").serializeArray(),
+			function(data) {
+			  $("div#ack").html("Incorrect Email or Password");
+			  $value=parseInt(data); 
+			  //alert($value); 
+			  
+			  if($value==1){
+				  window.location.replace("start.php");
+				//alert('yes');   
+			  }
+			  
+			});
+					 }
+					 
+					 $("#myForm").submit( function() {
+	   						return false;	
+								});
+ 
+});
+
+		
+							//	alert($value);  
+
+});
+	</script>
+
+  </body>
+</html>
